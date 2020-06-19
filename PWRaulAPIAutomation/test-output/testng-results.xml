@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4037" started-at="2020-04-06T18:21:25Z" finished-at="2020-04-06T18:21:29Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4037" started-at="2020-04-06T18:21:25Z" finished-at="2020-04-06T18:21:29Z">
+      <class name="Dashboards.DashboardsRequests">
+        <test-method status="PASS" signature="putDashlet()[pri:0, instance:Dashboards.DashboardsRequests@56f4468b]" name="putDashlet" duration-ms="4019" started-at="2020-04-06T23:51:25Z" finished-at="2020-04-06T23:51:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putDashlet -->
+      </class> <!-- Dashboards.DashboardsRequests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
