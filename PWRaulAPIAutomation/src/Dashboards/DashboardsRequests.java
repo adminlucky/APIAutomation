@@ -19,7 +19,7 @@ public class DashboardsRequests {
 	
 	public static RequestSpecification cookie(){
 		return RestAssured.given().contentType(ContentType.JSON)
-		.cookie("JSESSIONID", "A30B66D33338BC55A981BFBC1E0857FE");	
+		.cookie("JSESSIONID", "989B34667AE09067F552A59401CF524E");	
 	}
 	
 	/*@Test
@@ -97,24 +97,24 @@ public class DashboardsRequests {
 	
 	
 	//Not working
-	@Test
+	/*@Test
 	public static void putDashboard(){
 		response = cookie()
 	              .put("https://sat.propertyware.com/pw/api/v/dashboards/735313920");
 		
 			System.out.println("Response status code: "+response.statusCode()+"\n"+ "Response body is : "+ response.getBody().asString());
 			
-	}
-	/*
+	}*/
+	
 	@Test
 	public static void getDashboards(){
 		response = cookie()
-	              .get("https://sat.propertyware.com/pw/api/v/dashboards/735281155?refresh=false");
+	              .get("https://sat.propertyware.com/pw/api/v/dashboards/163905537?refresh=false");
 		
 			System.out.println("Response status code: "+response.statusCode()+"\n"+ "Response body is : "+ response.getBody().asString());
 			
 	}
-	@Test
+	/*@Test
 	public static void putDashlet(){
 		response = cookie()
 				.body("{\"title\": \"Bills with work orders Line chart\", \"chartType\": \"Line.swf\", "

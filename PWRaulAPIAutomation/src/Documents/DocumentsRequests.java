@@ -14,7 +14,7 @@ public class DocumentsRequests
 	
 	public static RequestSpecification cookie(){
 		return RestAssured.given().contentType(ContentType.JSON)
-		.cookie("JSESSIONID", "44FA8876A4405011A252A4D7A67C4FF9");	
+		.cookie("JSESSIONID", "834E6DCA1008E24BCE0D09C123F638F8");	
 	}
 	/*@Test
 	public static void getDocuments(){

@@ -17,7 +17,7 @@ public class NotesRequests {
 	
 	public static RequestSpecification cookie(){
 		return RestAssured.given().contentType(ContentType.JSON)
-		.cookie("JSESSIONID", "BBB3BBCA6DF8CB7B8A15704A7D93006E");	
+		.cookie("JSESSIONID", "CAA0111473A5F72E42B6586B042F6528");	
 	}
 	
 	@Test(priority = 4)
@@ -27,14 +27,14 @@ public class NotesRequests {
 		//.get("https://sit.propertyware.com/pw/api/v/tasks/tags");
 		//.get("https://sit.propertyware.com/pw/api/v/tasks/templates");
 		//.get("https://sat.propertyware.com/pw/api/v/notes/256903557");
-		.get("https://sit.propertyware.com/pw/api/v/conversations/0/10/A");
-		//.get("https://sat.propertyware.com/pw/api/v/notes");
+		//.get("https://sit.propertyware.com/pw/api/v/conversations/0/10/A");
+		.get("https://sit.propertyware.com/pw/api/v/notes");
 		
 		System.out.println("Response body of Get Request is : "+ response.getBody().asString());
 		System.out.println("****************************************End of get method******************************************");
 	}
 	
-	@Test
+	/*@Test
 	public static void postNote(){
 		
 		response = cookie()
@@ -43,7 +43,7 @@ public class NotesRequests {
 	            
 			System.out.println("Response body is : "+ response.getBody().asString());
 			System.out.println("****************************************End of Post method******************************************");
-	}
+	}*/
 	
 	/*@Test
 	public static void putNote(){
@@ -57,14 +57,14 @@ public class NotesRequests {
 			System.out.println("****************************************End of Put method******************************************");
 	}*/
 	
-	@Test
+	/*@Test
 	public static void deleteNote(){
 		
 			response = cookie()
-	            .delete("https://sat.propertyware.com/pw/api/v/notes/266928570");
+	            .delete("https://sat.propertyware.com/pw/api/v/notes/233638050");
 	            
 			System.out.println("Response body is : "+ response.getBody().asString());
 			Assert.assertTrue(response.getBody().asString().contains("Note is Deleted Sucessfully"));
 			System.out.println("****************************************End of Delete method******************************************");
-	}
+	}*/
 }
